@@ -1,0 +1,63 @@
+Programação é o processo de criar instruções para que um computador execute tarefas. Essas instruções são escritas em linguagens de programação como Python, Java, C++ e JavaScript.
+
+Uma linguagem de programação é composta por regras de sintaxe e semântica. A sintaxe define como o código deve ser escrito, enquanto a semântica define o significado das instruções.
+
+Variáveis são usadas para armazenar dados. Por exemplo, em Python:
+x = 10
+Aqui, a variável x armazena o valor 10.
+
+Tipos de dados comuns incluem:
+- Inteiros (int): números sem casas decimais
+- Ponto flutuante (float): números com casas decimais
+- Texto (string): sequências de caracteres
+- Booleano (bool): verdadeiro ou falso
+
+Estruturas condicionais permitem tomar decisões no código. Exemplo em Python:
+if x > 5:
+    print("Maior que 5")
+
+Estruturas de repetição permitem executar um bloco de código várias vezes:
+for i in range(5):
+    print(i)
+
+Funções são blocos de código reutilizáveis:
+def saudacao(nome):
+    return "Olá " + nome
+
+Listas são estruturas de dados que armazenam múltiplos valores:
+lista = [1, 2, 3, 4]
+
+Dicionários armazenam dados em formato chave-valor:
+pessoa = {"nome": "João", "idade": 30}
+
+Programação orientada a objetos (POO) organiza o código em classes e objetos. Uma classe é um molde, e um objeto é uma instância dessa classe.
+
+Exemplo de classe:
+class Pessoa:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def falar(self):
+        print("Olá, meu nome é", self.nome)
+
+Tratamento de erros é importante para evitar falhas no programa:
+try:
+    x = int("abc")
+except:
+    print("Erro ao converter")
+
+Algoritmos são sequências de passos para resolver um problema. Um bom algoritmo deve ser eficiente e claro.
+
+Estruturas de dados são formas de organizar informações. Exemplos incluem listas, filas, pilhas e árvores.
+
+Banco de dados é usado para armazenar informações de forma persistente. Exemplos incluem MySQL, PostgreSQL e MongoDB.
+
+APIs permitem que sistemas se comuniquem entre si, geralmente usando HTTP.
+
+Versionamento de código é feito com ferramentas como Git, permitindo controle de mudanças no projeto.
+
+Boas práticas incluem:
+- escrever código limpo
+- usar nomes claros para variáveis
+- evitar duplicação de código
+- comentar quando necessário
