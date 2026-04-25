@@ -31,20 +31,21 @@ def salvar_lote(domain, textos):
     conn.close()
 
 
-def buscar_conhecimento(domain):
+def buscar_conhecimento(domain, limit=2):
     conn = get_connection()
     cursor = conn.cursor()
 
     query = """
-    SELECT pergunta, resposta 
+    SELECT pergunta
     FROM knowledge_base 
     WHERE domain = %s AND avaliacao = 'like'
+    LIMIT %s
     """
 
-    cursor.execute(query, (domain,))
+    cursor.execute(query, (domain, limit))
     resultados = cursor.fetchall()
 
     cursor.close()
     conn.close()
 
-    return [f"Pergunta: {p}\nResposta: {r}" for p, r in resultados]
+    return [p for (p,) in resultados]

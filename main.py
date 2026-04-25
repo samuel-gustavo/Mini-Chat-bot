@@ -24,9 +24,10 @@ while True:
         break
 
     print("⏳ Pensando...\n")
+
     resposta = chat.ask(user_id, pergunta)
 
-    print("Juninho:", resposta)
+    print()
 
     feedback = input("\nAvaliação (s/n ou Enter para pular): ")
 

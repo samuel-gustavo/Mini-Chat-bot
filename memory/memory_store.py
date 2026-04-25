@@ -5,5 +5,5 @@ def save_memory(user_id, text):
         memory_db[user_id] = []
     memory_db[user_id].append(text)
 
-def get_memory(user_id):
-    return "\n".join(memory_db.get(user_id, []))
+def get_memory(user_id, limit=4):
+    return "\n".join(memory_db.get(user_id, [])[-limit:])
